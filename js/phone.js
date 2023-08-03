@@ -17,7 +17,7 @@ function inputPhoneTotal (isIncrease){
 }
 function updatePhonePrice(updateInputTotal){
     const phoneTotal = document.getElementById('phone-total');
-    const phoneTotalString = phoneTotal.innerText;
+    // const phoneTotalString = phoneTotal.innerText;
     const phonePriceTotal = updateInputTotal * 1219;
     phoneTotal.innerText = phonePriceTotal;
     
@@ -34,6 +34,7 @@ const updateInputTotal = inputPhoneTotal(true);
 // const phonePriceTotal = updateInputTotal * 1219;
 // phoneTotal.innerText = phonePriceTotal;
 updatePhonePrice(updateInputTotal);
+
 
 })
 

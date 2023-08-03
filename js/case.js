@@ -17,7 +17,7 @@ function inputCaseTotal (isIncrease){
 }
 function updateCasePrice(updateInputTotal){
     const caseTotal = document.getElementById('case-total');
-    const caseTotalString = caseTotal.innerText;
+    // const caseTotalString = caseTotal.innerText;
     const casePriceTotal = updateInputTotal * 59;
     caseTotal.innerText = casePriceTotal;
 }
