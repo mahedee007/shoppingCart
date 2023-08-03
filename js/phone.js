@@ -36,10 +36,32 @@ const updateInputTotal = inputPhoneTotal(true);
 updatePhonePrice(updateInputTotal);
 
 
+const cardPhonePrice = getCardPrice('phone-total');
+const cardCasePrice = getCardPrice('case-total');
+const cardPriceNumber = cardPhonePrice + cardCasePrice;
+
+const subTotalPrice = document.getElementById('sub-total');
+
+const subPrice = cardPriceNumber;
+
+
+subTotalPrice.innerText = subPrice;
+
+
 })
 
 document.getElementById('btn-phone-minus').addEventListener('click', function(){
     const updateInputTotal = inputPhoneTotal(false);
     updatePhonePrice(updateInputTotal);
+    const cardPhonePrice = getCardPrice('phone-total');
+const cardCasePrice = getCardPrice('case-total');
+const cardPriceNumber = cardPhonePrice + cardCasePrice;
+
+const subTotalPrice = document.getElementById('sub-total');
+
+const subPrice = cardPriceNumber;
+
+
+subTotalPrice.innerText = subPrice;
    
 })
